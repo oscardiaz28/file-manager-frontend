@@ -1,0 +1,11 @@
+<div class="relative p-2 rounded-md">
+    <button class="flex items-center gap-2" (click)="showDropdown()">
+        <p>Oscar</p>
+        <i class="fa-solid fa-angle-down mt-[2px]"></i>
+    </button>
+    <div class="bg-white shadow-md flex flex-col rounded-md min-w-[120px] absolute mt-2 right-0 py-1 hidden" 
+    id=settingsDropdown>
+        <a href="" class="p-2 px-4 block hover:text-indigo-700">Profile</a>
+        <a href="" class="p-2 px-4 block hover:text-indigo-700">Log out</a>
+    </div>
+</div>

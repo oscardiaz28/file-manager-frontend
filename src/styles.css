@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dropdown-create-container{
+    position: relative;
+    display: block;
+}
+.dropdown-create-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.active{
+    display: block;
+}

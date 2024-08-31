@@ -3,9 +3,14 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "administrador-archivos-frontend": {
+    "file-manager-frontend": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/administrador-archivos-frontend",
+            "outputPath": "dist/file-manager-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "administrador-archivos-frontend:build:production"
+              "buildTarget": "file-manager-frontend:build:production"
             },
             "development": {
-              "buildTarget": "administrador-archivos-frontend:build:development"
+              "buildTarget": "file-manager-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"

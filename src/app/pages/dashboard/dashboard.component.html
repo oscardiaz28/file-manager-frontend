@@ -1,0 +1,47 @@
+<div class="py-2 px-8">
+
+
+  <div class="">
+
+    <div class="flex items-center py-2 mb-3">
+
+      <div class="flex gap-1 items-center flex-1">
+        <i class="fa-solid fa-house text-sm"></i>
+        <p class="text-lg font-medium text-gray-600">Mis Archivos</p>
+      </div>
+
+      <div class="flex gap-4">
+
+        <div class="flex items-center gap-2">
+          <label for="only-favorites" class="font-medium text-gray-600 text-base">Solo favoritos</label>
+          <input type="checkbox" id="only-favorites" class="mt-1">
+        </div>
+  
+        <button class="flex bg-white border-2 p-2 px-4 rounded-md items-center gap-2 border-gray-200 hover:bg-gray-50 hover:text-indigo-700">
+          <i class="fa-solid fa-share-nodes mt-[3px]"></i>
+          <p class="font-medium">Compartir</p>
+        </button>
+  
+        <button class="flex bg-gray-900 border border-gray-900 p-2 px-4 rounded-md items-center gap-2 text-white">
+          <i class="fa-solid fa-share-nodes mt-[3px]"></i>
+          <p>Descargas</p>
+        </button>
+  
+  
+        <button class="flex bg-white border-2 p-2 px-4 rounded-md items-center gap-2 border-gray-200 hover:bg-gray-50 hover:text-indigo-700">
+          <i class="fa-solid fa-trash mt-[3px]"></i>
+          <p class="font-medium">Eliminar</p>
+        </button>
+
+      </div>
+
+    </div>
+
+    <div>
+      <app-files [files]="files"></app-files>
+    </div>
+
+  </div>
+  
+</div>
+  
